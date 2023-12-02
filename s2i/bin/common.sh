@@ -1,0 +1,1 @@
+/opt/jboss/container/maven/default/maven.sh
