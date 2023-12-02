@@ -17,4 +17,4 @@ spec:
     git:
       uri: 'https://github.com/relessawy/kotlin_demo'
       ref: main
-    contextDir: Chapter10/guestbook
+    contextDir: /
