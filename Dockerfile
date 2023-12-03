@@ -1,8 +1,10 @@
-# Use OpenJDK 17 image as the base
-FROM registry.access.redhat.com/ubi8/openjdk-17
+FROM registry.access.redhat.com/ubi8/ubi:latest
 
 # Install Java 21
-RUN microdnf update && microdnf install -y java-21-openjdk-devel && microdnf clean all
+RUN yum install -y java-21-openjdk-devel && yum clean all
 
-# Set JAVA_HOME to point to Java 21 (if required)
+# Add S2I scripts
+COPY ./s2i/bin/ /usr/libexec/s2i
+
+# Set environment variables
 ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk
