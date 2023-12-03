@@ -1,9 +1,9 @@
 
-source "${JBOSS_CONTAINER_UTIL_LOGGING_MODULE}/logging.sh"
+source "/usr/libexec/s2i/logging.sh"
 
 # inject our overridden maven_*() functions
 function maven_s2i_source_maven_overrides() {
-  source "${JBOSS_CONTAINER_JAVA_S2I_MODULE}/maven-overrides"
+  source "/usr/libexec/s2i/maven-overrides"
 }
 
 # Accommodate fabric8

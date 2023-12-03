@@ -1,7 +1,7 @@
 
 # include dependencies
-source "./logging.sh"
-source "./s2i-core"
+source "/usr/libexec/s2i/logging.sh"
+source "/usr/libexec/s2i/s2i-core"
 
 # initialization of maven s2i module
 function maven_s2i_init() {
