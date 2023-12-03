@@ -1,5 +1,5 @@
 # common shell routines for use with maven
-source "$JBOSS_CONTAINER_UTIL_LOGGING_MODULE/logging.sh"
+source "/usr/libexec/s2i/logging.sh"
 
 # default settings.xml file
 __JBOSS_MAVEN_DEFAULT_SETTINGS_FILE="${HOME}/.m2/settings.xml"
