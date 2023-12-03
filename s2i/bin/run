@@ -3,10 +3,10 @@
 # Command line arguments given to this script
 args="$*"
 
-source "${JBOSS_CONTAINER_UTIL_LOGGING_MODULE}/logging.sh"
-source "${JBOSS_CONTAINER_S2I_CORE_MODULE}/s2i-core"
+source "./logging.sh"
+source "./s2i-core"
 # include our s2i_core_*() overrides/extensions
-source "${JBOSS_CONTAINER_JAVA_S2I_MODULE}/s2i-core-hooks"
+source "./s2i-core-hooks"
 
 # Global S2I variable setup
 s2i_core_env_init
