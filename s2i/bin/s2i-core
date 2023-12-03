@@ -1,5 +1,5 @@
 # include dependencies
-source "${JBOSS_CONTAINER_UTIL_LOGGING_MODULE}/logging.sh"
+source "/usr/libexec/s2i/logging.sh"
 
 # initializes the environment used by common s2i_core_*() functions
 function s2i_core_init() {
