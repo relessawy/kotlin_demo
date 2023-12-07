@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi8/ubi:latest
 
 # Install Java 21
-RUN yum install -y java-21-openjdk-devel && yum clean all
+RUN yum install -y java-21-openjdk-devel maven && yum clean all
 
 # Add S2I scripts
 COPY ./s2i/bin/ /usr/libexec/s2i
