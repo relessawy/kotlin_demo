@@ -41,7 +41,7 @@ function maven_init_var_MAVEN_SETTINGS_XML() {
 }
 
 function maven_init_var_MAVEN_OPTS() {
-  export MAVEN_OPTS="${MAVEN_OPTS:-$(${JBOSS_CONTAINER_JAVA_JVM_MODULE}/java-default-options) -XX:MaxRAMPercentage=25.0}"
+  export MAVEN_OPTS="${MAVEN_OPTS:-$(/usr/libexec/s2i/java-default-options) -XX:MaxRAMPercentage=25.0}"
 }
 
 function maven_init_var_MAVEN_ARGS() {
