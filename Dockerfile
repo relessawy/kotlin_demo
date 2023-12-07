@@ -16,5 +16,5 @@ COPY ./s2i/bin/ /usr/libexec/s2i
 # Set environment variables
 ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk \
     MAVEN_OPTS="-Dmaven.repo.local=/.m2/repository" \ 
-    JAVA_APP_JAR=/deployments/demo-1.0-SNAPSHOT.jar
+    JAVA_APP_JAR=/tmp/src/target/demo-0.0.1-SNAPSHOT.jar.original
 
