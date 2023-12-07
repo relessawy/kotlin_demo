@@ -15,4 +15,6 @@ COPY ./s2i/bin/ /usr/libexec/s2i
 
 # Set environment variables
 ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk \
-    MAVEN_OPTS="-Dmaven.repo.local=/.m2/repository"
+    MAVEN_OPTS="-Dmaven.repo.local=/.m2/repository" \ 
+    JAVA_MAIN_CLASS=com.example.demo.DemoApplicationKt
+
