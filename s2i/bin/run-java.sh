@@ -101,7 +101,7 @@ load_env() {
   if [ -z "${JAVA_APP_DIR}" ]; then
     # XXX: is this correct?  This is defaulted above to /deployments.  Should we
     # define a default to the old /opt/java-run?
-    JAVA_APP_DIR="${JBOSS_CONTAINER_JAVA_RUN_MODULE}"
+    JAVA_APP_DIR=/deployments
   else
     if [ -f "${JAVA_APP_DIR}/${run_env_sh}" ]; then
       source "${JAVA_APP_DIR}/${run_env_sh}"
