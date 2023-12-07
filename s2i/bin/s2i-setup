@@ -10,4 +10,4 @@ log_warning "s2i-setup script has been deprecated and will be removed in a futur
 
 s2i_core_init
 
-source "${JBOSS_CONTAINER_MAVEN_DEFAULT_MODULE}/scl-enable-maven"
+source "/usr/libexec/s2i/scl-enable-maven"
