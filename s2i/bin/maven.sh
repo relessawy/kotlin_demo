@@ -36,7 +36,7 @@ function maven_init_var_MAVEN_SETTINGS_XML() {
   elif [ -f "${HOME}/.m2/settings.xml" ]; then
     MAVEN_SETTINGS_XML="${HOME}/.m2/settings.xml"
   else
-    MAVEN_SETTINGS_XML=/usr/libexec/s2i/jboss-settings.xml"
+    MAVEN_SETTINGS_XML="/usr/libexec/s2i/jboss-settings.xml"
   fi
 }
 
