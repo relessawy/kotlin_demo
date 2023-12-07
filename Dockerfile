@@ -16,10 +16,3 @@ COPY ./s2i/bin/ /usr/libexec/s2i
 # Set environment variables
 ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk \
     MAVEN_OPTS="-Dmaven.repo.local=/.m2/repository"
-
-# Create a non-root user and change ownership of the Maven directory
-RUN useradd -m myuser && \
-    chown -R myuser:myuser /.m2 /deployments
-
-# Switch to non-root user
-USER myuser
