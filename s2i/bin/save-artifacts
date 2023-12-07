@@ -1,9 +1,0 @@
-#!/bin/sh
-
-source "/usr/libexec/s2i/maven-s2i"
-
-# initialize the module
-maven_s2i_init
-
-# persist the artifacts
-maven_s2i_save_artifacts
