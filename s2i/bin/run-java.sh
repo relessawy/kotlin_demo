@@ -3,7 +3,7 @@
 # Fail on a single failed command
 set -eo pipefail
 
-source "$JBOSS_CONTAINER_UTIL_LOGGING_MODULE/logging.sh"
+source "/usr/libexec/s2i/logging.sh"
 
 if [ "${SCRIPT_DEBUG}" = "true" ] ; then
     set -x
