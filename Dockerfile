@@ -12,7 +12,6 @@ RUN mkdir -p /deployments && chmod -R 777 /deployments
 
 # Add S2I scripts
 COPY ./s2i/bin/ /usr/libexec/s2i
-COPY target/demo-1.0-SNAPSHOT.jar /deployments/demo-1.0-SNAPSHOT.jar
 
 # Set environment variables
 ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk \
